@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "singularName": "report",
+    "pluralName": "reports",
+    "displayName": "Reports",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "playerReported": {
+      "type": "enumeration",
+      "enum": [
+        "Player 1",
+        "Player 2",
+        "Player 3",
+        "Player 4",
+        "Player 5"
+      ],
+      "required": true
+    },
+    "typeReported": {
+      "type": "enumeration",
+      "enum": [
+        "Assédio",
+        "Trapaça",
+        "Outros"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "otherTypeReported": {
+      "type": "string"
+    }
+  }
+}
